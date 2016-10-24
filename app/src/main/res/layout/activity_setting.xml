@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kenguyen.codernews.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Begin Date" />
+
+        <EditText
+            android:layout_marginLeft="80dp"
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Sort Order"
+            android:id="@+id/textView" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:layout_marginLeft="80dp"
+            android:id="@+id/asSort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/Sorts_Array"
+            >
+
+        </android.support.v7.widget.AppCompatSpinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="News Desk Values" />
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/abArts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arts" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/abSport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fashion and Style" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/abFashion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sports"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:background="@color/colorAccent"
+        android:text="SAVE"
+        android:layout_gravity="center"
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnSaveOption"
+        />
+</LinearLayout>
