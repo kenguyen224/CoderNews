@@ -3,4 +3,6 @@
     <string name="tvHint">Search...</string>
 
     <string name="action_setting">Setting</string>
+    <string name="tvToolBar">New Article Search</string>
+    <string name="tvSetting">Setting</string>
 </resources>
